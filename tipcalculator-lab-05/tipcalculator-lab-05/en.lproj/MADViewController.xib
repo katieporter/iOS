@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MADViewController">
+            <connections>
+                <outlet property="checkAmount" destination="8" id="101"/>
+                <outlet property="people" destination="16" id="103"/>
+                <outlet property="tipDue" destination="57" id="104"/>
+                <outlet property="tipPercent" destination="12" id="102"/>
+                <outlet property="totalDue" destination="62" id="110"/>
+                <outlet property="totalDuePerPerson" destination="66" id="106"/>
+                <outlet property="view" destination="6" id="7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="6">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8">
+                    <rect key="frame" x="203" y="65" width="97" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="97" id="11"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="12">
+                    <rect key="frame" x="203" y="143" width="97" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" placeholder="1" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="16">
+                    <rect key="frame" x="203" y="220" width="97" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Check Amount:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="20">
+                    <rect key="frame" x="20" y="74" width="134" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="134" id="33"/>
+                        <constraint firstAttribute="height" constant="21" id="93"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tip %:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36">
+                    <rect key="frame" x="20" y="152" width="134" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="86"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="# of People:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41">
+                    <rect key="frame" x="20" y="229" width="134" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="92"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tip:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="45">
+                    <rect key="frame" x="20" y="327" width="134" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="90"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Total:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="49">
+                    <rect key="frame" x="20" y="405" width="134" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="94"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Total per Person:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53">
+                    <rect key="frame" x="20" y="482" width="134" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="91"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Light" family="Heiti SC" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57">
+                    <rect key="frame" x="203" y="327" width="97" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="62">
+                    <rect key="frame" x="203" y="405" width="97" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="$0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66">
+                    <rect key="frame" x="203" y="482" width="97" height="21"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="STHeitiSC-Medium" family="Heiti SC" pointSize="16"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.39770990569999998" green="0.64444633149999997" blue="0.37917883590000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="12" firstAttribute="leading" secondItem="8" secondAttribute="leading" id="15"/>
+                <constraint firstItem="16" firstAttribute="leading" secondItem="12" secondAttribute="leading" id="19"/>
+                <constraint firstItem="20" firstAttribute="bottom" secondItem="8" secondAttribute="bottom" id="30"/>
+                <constraint firstItem="20" firstAttribute="leading" secondItem="6" secondAttribute="leading" constant="20" symbolic="YES" id="35"/>
+                <constraint firstItem="36" firstAttribute="trailing" secondItem="20" secondAttribute="trailing" id="38"/>
+                <constraint firstItem="36" firstAttribute="leading" secondItem="6" secondAttribute="leading" constant="20" symbolic="YES" id="39"/>
+                <constraint firstItem="36" firstAttribute="bottom" secondItem="12" secondAttribute="bottom" id="40"/>
+                <constraint firstItem="41" firstAttribute="bottom" secondItem="16" secondAttribute="bottom" id="42"/>
+                <constraint firstItem="41" firstAttribute="trailing" secondItem="36" secondAttribute="trailing" id="43"/>
+                <constraint firstItem="41" firstAttribute="leading" secondItem="6" secondAttribute="leading" constant="20" symbolic="YES" id="44"/>
+                <constraint firstItem="45" firstAttribute="leading" secondItem="6" secondAttribute="leading" constant="20" symbolic="YES" id="46"/>
+                <constraint firstItem="45" firstAttribute="trailing" secondItem="41" secondAttribute="trailing" id="47"/>
+                <constraint firstItem="49" firstAttribute="trailing" secondItem="45" secondAttribute="trailing" id="51"/>
+                <constraint firstItem="49" firstAttribute="leading" secondItem="6" secondAttribute="leading" constant="20" symbolic="YES" id="52"/>
+                <constraint firstItem="53" firstAttribute="trailing" secondItem="49" secondAttribute="trailing" id="54"/>
+                <constraint firstItem="53" firstAttribute="leading" secondItem="6" secondAttribute="leading" constant="20" symbolic="YES" id="56"/>
+                <constraint firstItem="57" firstAttribute="baseline" secondItem="45" secondAttribute="baseline" id="61"/>
+                <constraint firstItem="62" firstAttribute="baseline" secondItem="49" secondAttribute="baseline" id="65"/>
+                <constraint firstItem="66" firstAttribute="baseline" secondItem="53" secondAttribute="baseline" id="67"/>
+                <constraint firstItem="57" firstAttribute="leading" secondItem="16" secondAttribute="leading" id="71"/>
+                <constraint firstItem="62" firstAttribute="leading" secondItem="57" secondAttribute="leading" id="73"/>
+                <constraint firstItem="66" firstAttribute="leading" secondItem="62" secondAttribute="leading" id="76"/>
+                <constraint firstAttribute="trailing" secondItem="16" secondAttribute="trailing" constant="20" symbolic="YES" id="80"/>
+                <constraint firstAttribute="trailing" secondItem="62" secondAttribute="trailing" constant="20" symbolic="YES" id="81"/>
+                <constraint firstAttribute="trailing" secondItem="12" secondAttribute="trailing" constant="20" symbolic="YES" id="82"/>
+                <constraint firstAttribute="trailing" secondItem="66" secondAttribute="trailing" constant="20" symbolic="YES" id="83"/>
+                <constraint firstAttribute="trailing" secondItem="57" secondAttribute="trailing" constant="20" symbolic="YES" id="84"/>
+                <constraint firstAttribute="trailing" secondItem="8" secondAttribute="trailing" constant="20" symbolic="YES" id="85"/>
+                <constraint firstItem="53" firstAttribute="top" secondItem="66" secondAttribute="top" id="87"/>
+                <constraint firstItem="45" firstAttribute="top" secondItem="57" secondAttribute="top" id="88"/>
+                <constraint firstItem="62" firstAttribute="top" secondItem="49" secondAttribute="top" id="89"/>
+                <constraint firstItem="8" firstAttribute="top" secondItem="6" secondAttribute="top" constant="65" id="95"/>
+                <constraint firstItem="16" firstAttribute="top" secondItem="6" secondAttribute="top" constant="220" id="96"/>
+                <constraint firstItem="12" firstAttribute="top" secondItem="6" secondAttribute="top" constant="143" id="97"/>
+                <constraint firstAttribute="bottom" secondItem="45" secondAttribute="bottom" constant="220" id="98"/>
+                <constraint firstAttribute="bottom" secondItem="53" secondAttribute="bottom" constant="65" id="99"/>
+                <constraint firstAttribute="bottom" secondItem="49" secondAttribute="bottom" constant="142" id="100"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>
